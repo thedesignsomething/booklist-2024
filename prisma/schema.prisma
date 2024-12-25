@@ -3,8 +3,8 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "postgresql"
+  url      = env("postgresql://postgres:Ra1ny96days!@db.wqebdptanlhxayhdqjdc.supabase.co:5432/postgres")
 }
 
 model CMSData {
