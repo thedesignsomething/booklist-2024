@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model CMSData {
+  id                Int      @id @default(autoincrement())
+  pageTitle         String
+  pageDescription   String
+  primaryColor      String
+  secondaryColor    String
+  fontFamily        String
+  filterCategories  String
+}
+
+model Book {
+  id             Int      @id @default(autoincrement())
+  title          String
+  author         String
+  coverUrl       String
+  genre          String
+  vibe           String
+  publishDate    String
+  readingFormat  String
+  isTop10       Boolean  @default(false)
+}
