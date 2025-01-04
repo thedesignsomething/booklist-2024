@@ -23,7 +23,6 @@ export default async function handler(
           coverUrl: req.body.coverUrl,
           genre: req.body.genre,
           vibe: req.body.vibe,
-          publishDate: req.body.publishDate,
           readingFormat: req.body.readingFormat
         }
       })

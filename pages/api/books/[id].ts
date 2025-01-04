@@ -14,7 +14,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           coverUrl: req.body.coverUrl,
           genre: req.body.genre,
           vibe: req.body.vibe,
-          publishDate: req.body.publishDate,
           readingFormat: req.body.readingFormat
         }
       })
