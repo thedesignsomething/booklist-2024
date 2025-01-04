@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = env("DIRECT_URL")
 }
 
 model CMSData {
@@ -24,7 +24,6 @@ model Book {
   coverUrl       String
   genre          String
   vibe           String
-  publishDate    String
   readingFormat  String
   isTop10       Boolean  @default(false)
 }
