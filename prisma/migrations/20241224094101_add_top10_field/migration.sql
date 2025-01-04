@@ -17,7 +17,6 @@ CREATE TABLE "Book" (
     "coverUrl" TEXT NOT NULL,
     "genre" TEXT NOT NULL,
     "vibe" TEXT NOT NULL,
-    "publishDate" TEXT NOT NULL,
     "readingFormat" TEXT NOT NULL,
     "isTop10" BOOLEAN NOT NULL DEFAULT false
 );

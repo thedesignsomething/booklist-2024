@@ -5,7 +5,6 @@ export type Book = {
     coverUrl: string
     genre: string
     vibe: string
-    publishDate: string
     readingFormat: string
     isTop10?: boolean;
   }
